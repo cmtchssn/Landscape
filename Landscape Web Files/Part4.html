@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Landscape Part 4</title>
+		<script type="text/javascript" src="nexusUI.js"></script>
+		<script>
+
+			nx.onload = function() {
+				//src="folder on Mac Laptop"^^^^^^^
+				//send to ajax and define php relay script path
+				nx.sendsTo("ajax");
+				nx.setAjaxPath("nexusOSCRelay4.php"); //path set to folder with php
+				multitouch1.oscPath="/4/multitouch4";
+				//nx.setThrottlePeriod(5000);
+				//multitouch1.throttlePeriod=5000;
+				nx.colorize("#0af");
+
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<canvas nx="multitouch" style="width:600px;height:600px;"></canvas>
+
+	</body>
+
+</html>
